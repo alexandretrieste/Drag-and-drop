@@ -51,16 +51,12 @@ function embaralhar(argIteracoes) {
 function trocarPeca() {
     var escolhidoTrocadoTop=escolhido1.style.top;
     var escolhidoTrocadoLeft=escolhido1.style.left;
-
     escolhido1.style.top=escolhido2.style.top;
     escolhido1.style.left=escolhido2.style.left;
-
     escolhido2.style.top=escolhidoTrocadoTop;
     escolhido2.style.left=escolhidoTrocadoLeft;
-
     escolhido1=null;
     escolhido2=null;
-
     validar();
 }
 
@@ -78,7 +74,7 @@ function validar() {
         }
     }
     if (quebraCabecaOk) {
-        window.alert("Parabéns, você conseguiu!!!");
+        window.alert("Parabêns, você conseguiu!!!");
     }
 }
 embaralhar (100);
