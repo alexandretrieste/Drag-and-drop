@@ -51,12 +51,16 @@ function embaralhar(argIteracoes) {
 function trocarPeca() {
     var escolhidoTrocadoTop=escolhido1.style.top;
     var escolhidoTrocadoLeft=escolhido1.style.left;
+
     escolhido1.style.top=escolhido2.style.top;
     escolhido1.style.left=escolhido2.style.left;
+
     escolhido2.style.top=escolhidoTrocadoTop;
     escolhido2.style.left=escolhidoTrocadoLeft;
+
     escolhido1=null;
     escolhido2=null;
+
     validar();
 }
 
